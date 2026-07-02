@@ -1,15 +1,14 @@
-# TonaqueSpace Sprint 1 v10-v12
+# TonaqueSpace Sprint 2 v13-v15
 
 ## Added
-- Tonaque ID account shell: Sign In, Create, Guest mode.
-- Mission Control entry flow.
-- Business Directory foundation with search and category filters.
-- Marketplace / SpaceCart foundation with demo products and cart preview.
-- WhatsApp enquiry generation from cart selections.
-- Mobile-first styling for new sections.
+- SpaceAI assistant preview with guided prompt buttons.
+- SpaceFarm operational hub preview.
+- SpaceHealth appointment/service hub preview.
+- Community updates/opportunity hub.
+- Notification panel.
+- Tonaque ID profile preview.
+- Mobile hub drawer interactions.
 
-## Existing retained
-- Orbit icon interactions from v9.
-- Mission Control dashboard.
-- SEO files: robots.txt, sitemap.xml, humans.txt, security.txt.
-- PWA icons and manifest.
+## Updated
+- Documentation and roadmap for Sprint 2.
+- UI foundations for future backend/API connection.

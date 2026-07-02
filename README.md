@@ -1,15 +1,15 @@
-# TonaqueSpace
+# TonaqueSpace Sprint 2 v13-v15
 
-TonaqueSpace is the digital ecosystem platform for Tonaque Enterprises.
+This release expands TonaqueSpace beyond the Mission Control and Marketplace foundation into active ecosystem previews: SpaceAI, SpaceFarm, SpaceHealth, Community, Notifications and Profile preview.
 
-## Sprint 1 v10-v12
-This release introduces:
+## Upload to GitHub
+Replace the usual files:
+- `index.html`
+- `assets/css/style.css`
+- `assets/js/app.js`
 
-- Tonaque ID account shell
-- Mission Control dashboard
-- Business Directory foundation
-- SpaceCart Marketplace foundation
-- WhatsApp and email enquiry flows
-
-## Deploy
-Upload/replace files in GitHub. Netlify deploys automatically from the main branch.
+Optional docs to update:
+- `README.md`
+- `CHANGELOG.md`
+- `TODO.md`
+- `VERSION.txt`

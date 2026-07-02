@@ -1,2 +1,2 @@
-TonaqueSpace Sprint 1 v10-v12
-Release: Tonaque ID + Business Directory + Marketplace Foundation
+TonaqueSpace Sprint 2 v13-v15
+Release: SpaceAI + SpaceFarm + SpaceHealth + Community + Profile Preview

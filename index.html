@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TonaqueSpace — Mission Control Ecosystem OS</title>
+  <title>TonaqueSpace — Mission Control Ecosystem OS | Sprint 2</title>
   <meta name="description" content="TonaqueSpace is an intelligent software ecosystem for education, commerce, finance, healthcare, agriculture and enterprise operations.">
   <meta name="keywords" content="TonaqueSpace, SpaceCampus, SpaceCart, SpaceFinance, SpaceStudio, Zimbabwe software ecosystem, Tonaque Digital Solutions, business software Zimbabwe">
   <meta name="author" content="Tonaque Enterprises Pvt Ltd">
@@ -556,6 +556,109 @@
         </div>
       </div>
     </section>
+
+    <!-- Sprint 2: SpaceAI Assistant Preview -->
+    <section id="space-ai-lab" class="ai-lab-section">
+      <div class="wrap ai-lab-grid">
+        <div class="ai-copy">
+          <div class="eyebrow">Sprint 2 · SpaceAI</div>
+          <h2 class="section-title">Your intelligent assistant<br><span class="gold-text">inside every Space.</span></h2>
+          <p class="muted">SpaceAI is the future assistant layer for TonaqueSpace. It will help users search, plan, analyse, write, summarise and make decisions across the ecosystem.</p>
+          <div class="ai-chip-row">
+            <span>Ask</span><span>Plan</span><span>Summarise</span><span>Automate</span>
+          </div>
+        </div>
+        <div class="ai-console panel">
+          <div class="console-top"><b>🤖 SpaceAI Assistant</b><span class="live">Preview</span></div>
+          <div class="ai-thread" id="aiThread">
+            <div class="ai-message system">Mission Control connected. Choose a prompt below to preview SpaceAI.</div>
+          </div>
+          <div class="ai-prompts">
+            <button data-ai-prompt="Build a launch plan for SpaceCampus.">Campus Plan</button>
+            <button data-ai-prompt="Summarise today’s business opportunities.">Business Brief</button>
+            <button data-ai-prompt="Create a farm operations checklist.">Farm Checklist</button>
+            <button data-ai-prompt="Prepare a health appointment workflow.">Health Flow</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sprint 2: Live Hubs -->
+    <section id="live-hubs" class="live-hubs-section">
+      <div class="wrap">
+        <div class="section-head-row">
+          <div>
+            <div class="eyebrow">Sprint 2 · Active Hubs</div>
+            <h2 class="section-title">More Spaces now have<br><span class="gold-text">working previews.</span></h2>
+          </div>
+          <a class="btn ghost" href="#contact">Request a Demo</a>
+        </div>
+        <div class="hub-grid">
+          <article class="hub-card farm-hub" data-hub="SpaceFarm">
+            <div class="hub-icon">🌱</div>
+            <h3>SpaceFarm</h3>
+            <p>Crop planning, livestock notes, input tracking, harvest checklists and market readiness.</p>
+            <div class="hub-progress"><span style="width:68%"></span></div>
+            <button class="hub-action" data-open-hub="farm">Open Farm Hub</button>
+          </article>
+          <article class="hub-card health-hub" data-hub="SpaceHealth">
+            <div class="hub-icon">❤️</div>
+            <h3>SpaceHealth</h3>
+            <p>Appointments, patient journeys, clinic operations, reminders and health service enquiries.</p>
+            <div class="hub-progress"><span style="width:54%"></span></div>
+            <button class="hub-action" data-open-hub="health">Open Health Hub</button>
+          </article>
+          <article class="hub-card community-hub" data-hub="Community">
+            <div class="hub-icon">💬</div>
+            <h3>Community</h3>
+            <p>Updates, launches, announcements, partner opportunities and public platform news.</p>
+            <div class="hub-progress"><span style="width:72%"></span></div>
+            <button class="hub-action" data-open-hub="community">Open Community</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sprint 2: Notification and Profile Layer -->
+    <section id="profile-preview" class="profile-preview-section">
+      <div class="wrap profile-grid">
+        <div class="profile-card panel">
+          <div class="profile-avatar">TM</div>
+          <div>
+            <div class="eyebrow">Tonaque ID</div>
+            <h3>Profile Preview</h3>
+            <p class="muted">A future profile layer for saved Spaces, notifications, account preferences and organisation access.</p>
+          </div>
+          <div class="profile-meta">
+            <span>Guest Mode</span><strong>Active</strong>
+          </div>
+        </div>
+        <div class="notification-card panel">
+          <div class="console-top"><b>🔔 Notifications</b><span class="live">3 new</span></div>
+          <ul class="notify-list">
+            <li><strong>SpaceAI Preview</strong><span>Assistant shell is ready for testing.</span></li>
+            <li><strong>SpaceFarm Hub</strong><span>Farm planning workflow added.</span></li>
+            <li><strong>SpaceHealth Hub</strong><span>Appointment flow preview added.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sprint 2: Hub Drawer -->
+    <div class="hub-drawer" id="hubDrawer" aria-hidden="true">
+      <div class="hub-drawer-panel">
+        <button class="hub-close" type="button" id="hubClose" aria-label="Close hub">×</button>
+        <div class="eyebrow" id="hubKicker">Space Hub</div>
+        <h2 id="hubTitle">Hub Preview</h2>
+        <p class="muted" id="hubText">Choose a hub to preview its workflows.</p>
+        <div class="hub-workflows" id="hubWorkflows"></div>
+        <div class="space-modal-actions">
+          <a class="btn" id="hubWhatsapp" href="https://wa.me/263776706614" target="_blank" rel="noopener">WhatsApp Demo</a>
+          <a class="btn ghost" id="hubEmail" href="mailto:info@tonaquespace.co.zw">Email Team</a>
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <!-- Footer Structure -->
