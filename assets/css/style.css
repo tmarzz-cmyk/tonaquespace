@@ -1185,3 +1185,27 @@ body {
   .quick-space-grid { grid-template-columns: repeat(3, 1fr); }
   .space-modal-stage { grid-template-columns: 1fr; }
 }
+
+/* V8 CONTACT FLOW */
+.direct-contact-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+.direct-contact-strip a {
+  color: #b3b7cc;
+  text-decoration: none;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.025);
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+.direct-contact-strip a:hover {
+  color: var(--stellar-white);
+  border-color: rgba(255,200,87,.35);
+}
+.space-modal-actions {
+  flex-wrap: wrap;
+}
