@@ -1,7 +1,9 @@
-# Next Build - v10
+# Next Sprint
 
-- Add Sign In / Create Account mock interface.
-- Add user dashboard preview.
-- Add notification placeholders.
-- Add saved Spaces concept.
-- Add deeper SpaceStudio command centre layout.
+## Sprint 2 Candidates
+- SpaceAI assistant panel
+- SpaceFarm agriculture module
+- SpaceHealth appointments module
+- Notifications centre
+- User profile shell
+- Better live search across all Spaces

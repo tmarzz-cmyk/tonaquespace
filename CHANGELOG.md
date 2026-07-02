@@ -1,16 +1,15 @@
-# TonaqueSpace Orbit Live v9
+# TonaqueSpace Sprint 1 v10-v12
 
-## Mission Control Release
+## Added
+- Tonaque ID account shell: Sign In, Create, Guest mode.
+- Mission Control entry flow.
+- Business Directory foundation with search and category filters.
+- Marketplace / SpaceCart foundation with demo products and cart preview.
+- WhatsApp enquiry generation from cart selections.
+- Mobile-first styling for new sections.
 
-- Added live Mission Control dashboard section.
-- Added animated ecosystem counters.
-- Added system status pills and live mission log.
-- Added selected Space display that updates when orbit icons are tapped.
-- Improved active orbit behaviour and modal polish.
-- Kept v8 WhatsApp and email enquiry flows.
-- Included complete SEO/support files: robots.txt, sitemap.xml, humans.txt, .well-known/security.txt.
-
-Core contacts:
-- WhatsApp: +263 776 706 614
-- Email: info@tonaquespace.co.zw
-- Admin: admin@tonaquespace.co.zw
+## Existing retained
+- Orbit icon interactions from v9.
+- Mission Control dashboard.
+- SEO files: robots.txt, sitemap.xml, humans.txt, security.txt.
+- PWA icons and manifest.

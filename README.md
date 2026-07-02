@@ -1,15 +1,15 @@
-# TonaqueSpace Orbit Live v9
+# TonaqueSpace
 
-TonaqueSpace is an interactive software ecosystem landing platform for SpaceCampus, SpaceCart, SpaceFinance, SpaceAI, SpaceFarm, SpaceHealth and future Spaces.
+TonaqueSpace is the digital ecosystem platform for Tonaque Enterprises.
 
-## Upload to GitHub
-Replace these main files for the v9 update:
+## Sprint 1 v10-v12
+This release introduces:
 
-- `index.html`
-- `assets/css/style.css`
-- `assets/js/app.js`
+- Tonaque ID account shell
+- Mission Control dashboard
+- Business Directory foundation
+- SpaceCart Marketplace foundation
+- WhatsApp and email enquiry flows
 
-The package also contains the full project support files including favicons, manifest, robots.txt, sitemap.xml, humans.txt and security.txt.
-
-## Deployment
-Netlify automatically deploys from the GitHub `main` branch after each commit.
+## Deploy
+Upload/replace files in GitHub. Netlify deploys automatically from the main branch.

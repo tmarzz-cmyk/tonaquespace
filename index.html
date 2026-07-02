@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TonaqueSpace — Mission Control Ecosystem</title>
+  <title>TonaqueSpace — Mission Control Ecosystem OS</title>
   <meta name="description" content="TonaqueSpace is an intelligent software ecosystem for education, commerce, finance, healthcare, agriculture and enterprise operations.">
   <meta name="keywords" content="TonaqueSpace, SpaceCampus, SpaceCart, SpaceFinance, SpaceStudio, Zimbabwe software ecosystem, Tonaque Digital Solutions, business software Zimbabwe">
   <meta name="author" content="Tonaque Enterprises Pvt Ltd">
@@ -87,6 +87,7 @@
         <div class="actions">
           <a class="btn" href="#universe">Explore the Universe →</a>
           <a class="btn ghost" href="#studio">Experience SpaceStudio</a>
+          <a class="btn soft" href="#tonaque-id">Enter Mission Control</a>
         </div>
         <div class="proof">
           <div>One Login<small>for many Spaces</small></div>
@@ -387,6 +388,159 @@
           <div class="icon" style="--accent: var(--space-finance)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></div>
           <h3>24/7 Ready</h3>
           <p class="muted">Designed to support growing organisations.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Tonaque ID / Account Foundation -->
+    <section id="tonaque-id" class="identity-section">
+      <div class="wrap identity-grid">
+        <div class="identity-copy">
+          <div class="eyebrow">Tonaque ID</div>
+          <h2 class="section-title">One identity.<br><span class="gold-text">Every Space.</span></h2>
+          <p class="muted">Tonaque ID is the future account layer for the whole ecosystem. Users will sign in once, then access SpaceCampus, SpaceCart, SpaceFinance, SpaceAI, SpaceFarm, SpaceHealth and future Spaces from one secure Mission Control.</p>
+          <div class="identity-badges">
+            <span>Single login</span>
+            <span>Guest access</span>
+            <span>Future-ready auth</span>
+          </div>
+        </div>
+
+        <div class="identity-console" aria-label="Tonaque ID demo interface">
+          <div class="id-tabs" role="tablist">
+            <button class="id-tab active" data-id-tab="signin">Sign In</button>
+            <button class="id-tab" data-id-tab="create">Create</button>
+            <button class="id-tab" data-id-tab="guest">Guest</button>
+          </div>
+
+          <div class="id-panel active" data-id-panel="signin">
+            <h3>Welcome back</h3>
+            <p>Enter Mission Control with your Tonaque ID.</p>
+            <label>Email</label>
+            <input type="email" value="admin@tonaquespace.co.zw" aria-label="Sign in email">
+            <label>Password</label>
+            <input type="password" value="tonaque-space" aria-label="Sign in password">
+            <button class="btn id-demo-btn" data-dashboard-message="Welcome back. Mission Control unlocked.">Enter Mission Control</button>
+            <a href="mailto:admin@tonaquespace.co.zw?subject=TonaqueSpace%20Password%20Help">Forgot password?</a>
+          </div>
+
+          <div class="id-panel" data-id-panel="create">
+            <h3>Create your Tonaque ID</h3>
+            <p>Reserve your account for early ecosystem access.</p>
+            <label>Name</label>
+            <input type="text" placeholder="Your name">
+            <label>Email</label>
+            <input type="email" placeholder="you@example.com">
+            <a class="btn" href="mailto:info@tonaquespace.co.zw?subject=Create%20Tonaque%20ID&body=Hello%20TonaqueSpace%2C%20I%20would%20like%20to%20create%20a%20Tonaque%20ID.">Request Early Access</a>
+          </div>
+
+          <div class="id-panel" data-id-panel="guest">
+            <h3>Continue as guest</h3>
+            <p>Explore the ecosystem without signing in.</p>
+            <div class="guest-grid">
+              <a href="#spaces">Explore Spaces</a>
+              <a href="#directory">View Directory</a>
+              <a href="#marketplace">Browse Marketplace</a>
+              <a href="#contact">Contact Team</a>
+            </div>
+          </div>
+          <div id="idStatus" class="id-status">Tonaque ID shell ready. Backend connection will be added in a later release.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Directory Foundation -->
+    <section id="directory" class="directory-section">
+      <div class="wrap">
+        <div class="spaces-head">
+          <div>
+            <div class="eyebrow">Business Directory</div>
+            <h2 class="section-title">Find trusted businesses<br>inside the Space.</h2>
+            <p class="muted">A polished directory foundation for future listings, suppliers, schools, shops, service providers and ecosystem partners.</p>
+          </div>
+          <a class="btn ghost" href="mailto:info@tonaquespace.co.zw?subject=List%20my%20business%20on%20TonaqueSpace">Add Your Business</a>
+        </div>
+
+        <div class="directory-toolbar">
+          <input id="businessSearch" type="search" placeholder="Search businesses, categories or services..." aria-label="Search business directory">
+          <div class="directory-filters" aria-label="Business category filters">
+            <button class="business-filter active" data-business-filter="all">All</button>
+            <button class="business-filter" data-business-filter="education">Education</button>
+            <button class="business-filter" data-business-filter="retail">Retail</button>
+            <button class="business-filter" data-business-filter="services">Services</button>
+            <button class="business-filter" data-business-filter="technology">Technology</button>
+          </div>
+        </div>
+
+        <div class="business-grid">
+          <article class="business-card" data-business-category="education technology">
+            <span>Education · Platform</span>
+            <h3>SpaceCampus</h3>
+            <p>School operations, admissions, attendance, portals, exams and parent communication tools.</p>
+            <div><b>Status:</b> Foundation build</div>
+            <a href="https://wa.me/263776706614?text=Hello%20TonaqueSpace%2C%20I%20want%20to%20discuss%20SpaceCampus." target="_blank" rel="noopener">Request Demo →</a>
+          </article>
+          <article class="business-card" data-business-category="retail technology">
+            <span>Retail · Commerce</span>
+            <h3>SpaceCart</h3>
+            <p>Marketplace, stock, orders, checkout flows and vendor tools for modern commerce.</p>
+            <div><b>Status:</b> Prototype active</div>
+            <a href="#marketplace">Open Marketplace →</a>
+          </article>
+          <article class="business-card" data-business-category="services technology">
+            <span>Technology · Services</span>
+            <h3>Tonaque Digital Solutions</h3>
+            <p>Websites, PWAs, business systems, automation and digital transformation services.</p>
+            <div><b>Status:</b> Live operator</div>
+            <a href="mailto:info@tonaquespace.co.zw?subject=Tonaque%20Digital%20Solutions%20Enquiry">Email Team →</a>
+          </article>
+          <article class="business-card" data-business-category="services retail">
+            <span>Services · Future Listing</span>
+            <h3>Partner Network</h3>
+            <p>A future verified business directory for Zimbabwean brands, suppliers and service providers.</p>
+            <div><b>Status:</b> Accepting interest</div>
+            <a href="mailto:info@tonaquespace.co.zw?subject=Business%20Directory%20Listing">Join Directory →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marketplace Foundation -->
+    <section id="marketplace" class="marketplace-section">
+      <div class="wrap marketplace-grid">
+        <div class="market-copy">
+          <div class="eyebrow">SpaceCart Foundation</div>
+          <h2 class="section-title">Marketplace shell<br><span class="gold-text">ready for products.</span></h2>
+          <p class="muted">A lightweight front-end marketplace foundation with categories, demo products, cart state and checkout preview. Backend payments and vendor accounts can plug in later.</p>
+          <div class="market-actions">
+            <button class="btn" id="clearCart">Clear Cart</button>
+            <a class="btn ghost" href="https://wa.me/263776706614?text=Hello%20TonaqueSpace%2C%20I%20want%20a%20SpaceCart%20demo." target="_blank" rel="noopener">Request SpaceCart Demo</a>
+          </div>
+        </div>
+        <div class="market-panel">
+          <div class="market-head">
+            <strong>SpaceCart Demo</strong>
+            <span id="cartCount">0 items</span>
+          </div>
+          <div class="product-grid-mini">
+            <article class="product-mini" data-product="Campus Starter" data-price="150">
+              <div>🎓</div><h4>Campus Starter</h4><p>Admissions and basic portal setup.</p><strong>$150+</strong><button class="add-market-item">Add</button>
+            </article>
+            <article class="product-mini" data-product="Business Web App" data-price="300">
+              <div>💼</div><h4>Business Web App</h4><p>PWA-ready website foundation.</p><strong>$300+</strong><button class="add-market-item">Add</button>
+            </article>
+            <article class="product-mini" data-product="Premium Ecosystem" data-price="500">
+              <div>🚀</div><h4>Premium Ecosystem</h4><p>Advanced multi-section platform build.</p><strong>$500+</strong><button class="add-market-item">Add</button>
+            </article>
+          </div>
+          <div class="cart-preview">
+            <h4>Cart Preview</h4>
+            <div id="cartItems">No items added yet.</div>
+            <div class="cart-total">Estimated total: <b id="cartTotal">$0</b></div>
+            <a id="cartWhatsApp" class="btn" href="https://wa.me/263776706614?text=Hello%20TonaqueSpace%2C%20I%20want%20to%20discuss%20SpaceCart." target="_blank" rel="noopener">Send Enquiry</a>
+          </div>
         </div>
       </div>
     </section>
