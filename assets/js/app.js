@@ -286,6 +286,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const leadMessage = document.getElementById('leadMessage');
   const mailLead = document.getElementById('mailLead');
   const modalStartBtn = document.getElementById('modalStartBtn');
+  const modalWhatsappBtn = document.getElementById('modalWhatsappBtn');
+  const whatsappNumber = '263776706614';
+  const primaryEmail = 'info@tonaquespace.co.zw';
+  const adminEmail = 'admin@tonaquespace.co.zw';
   let activeSpaceName = 'TonaqueSpace';
 
   const setLeadSpace = (spaceName) => {
@@ -313,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const space = leadSpace?.value || activeSpaceName;
       const message = leadMessage?.value.trim() || `I am interested in ${space}.`;
       const text = `Hello TonaqueSpace, my name is ${name}. Contact: ${contact}. Space: ${space}. Message: ${message}`;
-      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+      window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
     });
   }
 
@@ -321,7 +325,17 @@ document.addEventListener('DOMContentLoaded', () => {
     mailLead.addEventListener('click', () => {
       const space = leadSpace?.value || activeSpaceName;
       const body = leadMessage?.value || `I am interested in ${space}. Please contact me.`;
-      mailLead.href = `mailto:hello@tonaquespace.co.zw?subject=${encodeURIComponent('TonaqueSpace enquiry: ' + space)}&body=${encodeURIComponent(body)}`;
+      mailLead.href = `mailto:${primaryEmail}?cc=${encodeURIComponent(adminEmail)}&subject=${encodeURIComponent('TonaqueSpace enquiry: ' + space)}&body=${encodeURIComponent(body)}`;
+    });
+  }
+
+
+
+  if (modalWhatsappBtn) {
+    modalWhatsappBtn.addEventListener('click', () => {
+      const space = activeSpaceName || 'TonaqueSpace';
+      const text = `Hello TonaqueSpace, I would like a demo for ${space}.`;
+      window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
     });
   }
 
