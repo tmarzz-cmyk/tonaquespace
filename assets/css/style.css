@@ -1001,3 +1001,78 @@ body {
   .node::after { display: none; }
   .node { width: 46px; height: 46px; }
 }
+
+
+/* ======================================================================
+   V6 SPACE INTEL: STATUS, ROADMAP & DEEP-LINK MODAL POLISH
+   ====================================================================== */
+.space-modal-intel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 22px 0 18px;
+}
+.space-modal-intel div,
+.space-modal-roadmap div {
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  padding: 13px;
+}
+.space-modal-intel span {
+  display: block;
+  color: #8c91a8;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.space-modal-intel strong {
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.25;
+}
+.space-modal-roadmap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 22px;
+}
+.space-modal-roadmap div {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.space-modal-roadmap b {
+  color: var(--cosmic-gold);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+}
+.space-modal-roadmap span {
+  color: #c7cbdd;
+  font-size: 13px;
+  line-height: 1.35;
+}
+.node.is-active::before {
+  content: "";
+  position: absolute;
+  inset: -9px;
+  border-radius: inherit;
+  border: 1px solid currentColor;
+  opacity: .22;
+  animation: activeNodePulse 1.6s ease-in-out infinite;
+}
+@keyframes activeNodePulse {
+  0% { transform: scale(.86); opacity: .08; }
+  55% { transform: scale(1.18); opacity: .26; }
+  100% { transform: scale(.86); opacity: .08; }
+}
+@media (max-width: 768px) {
+  .space-modal-intel { grid-template-columns: 1fr; }
+  .space-modal-roadmap { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .orbital, .emblem, .node, .s-star, .space-modal-card, .node.is-active::before { animation: none !important; }
+  html { scroll-behavior: auto; }
+}
