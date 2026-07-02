@@ -1,6 +1,7 @@
-# Next Build Ideas
+# Next Build - v10
 
-- Add SpaceStudio dashboard preview.
-- Add real demo pages for SpaceCart, SpaceCampus and SpaceFarm.
-- Add analytics/events for Space icon taps.
-- Add richer SEO schema JSON-LD.
+- Add Sign In / Create Account mock interface.
+- Add user dashboard preview.
+- Add notification placeholders.
+- Add saved Spaces concept.
+- Add deeper SpaceStudio command centre layout.

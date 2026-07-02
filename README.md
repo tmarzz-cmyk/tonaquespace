@@ -1,11 +1,15 @@
-# TonaqueSpace Orbit Live v8
+# TonaqueSpace Orbit Live v9
 
-Interactive TonaqueSpace website release with live orbit panels and real enquiry routing.
+TonaqueSpace is an interactive software ecosystem landing platform for SpaceCampus, SpaceCart, SpaceFinance, SpaceAI, SpaceFarm, SpaceHealth and future Spaces.
 
-## Contact Routing
-- Email: info@tonaquespace.co.zw
-- Admin: admin@tonaquespace.co.zw
-- WhatsApp: +263 776 706 614
+## Upload to GitHub
+Replace these main files for the v9 update:
+
+- `index.html`
+- `assets/css/style.css`
+- `assets/js/app.js`
+
+The package also contains the full project support files including favicons, manifest, robots.txt, sitemap.xml, humans.txt and security.txt.
 
 ## Deployment
-Commit updated files to GitHub. Netlify auto-deploys from the main branch.
+Netlify automatically deploys from the GitHub `main` branch after each commit.

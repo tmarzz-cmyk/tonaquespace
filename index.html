@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TonaqueSpace — Interactive Software Ecosystem</title>
+  <title>TonaqueSpace — Mission Control Ecosystem</title>
   <meta name="description" content="TonaqueSpace is an intelligent software ecosystem for education, commerce, finance, healthcare, agriculture and enterprise operations.">
   <meta name="keywords" content="TonaqueSpace, SpaceCampus, SpaceCart, SpaceFinance, SpaceStudio, Zimbabwe software ecosystem, Tonaque Digital Solutions, business software Zimbabwe">
   <meta name="author" content="Tonaque Enterprises Pvt Ltd">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://tonaquespace.co.zw/">
   <meta property="og:title" content="TonaqueSpace — Where Everything Connects.">
-  <meta property="og:description" content="Explore the interactive TonaqueSpace ecosystem: SpaceCampus, SpaceCart, SpaceFinance, SpaceAI, SpaceFarm and SpaceHealth.">
+  <meta property="og:description" content="Explore the live TonaqueSpace mission control ecosystem: SpaceCampus, SpaceCart, SpaceFinance, SpaceAI, SpaceFarm and SpaceHealth.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tonaquespace.co.zw/">
   <meta property="og:image" content="https://tonaquespace.co.zw/apple-touch-icon.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="TonaqueSpace — Where Everything Connects.">
-  <meta name="twitter:description" content="Explore the interactive TonaqueSpace ecosystem: SpaceCampus, SpaceCart, SpaceFinance, SpaceAI, SpaceFarm and SpaceHealth.">
+  <meta name="twitter:description" content="Explore the live TonaqueSpace mission control ecosystem: SpaceCampus, SpaceCart, SpaceFinance, SpaceAI, SpaceFarm and SpaceHealth.">
   <meta name="twitter:image" content="https://tonaquespace.co.zw/apple-touch-icon.png">
   
   <!-- Favicons & App Icons -->
@@ -68,6 +68,7 @@
       <div class="navlinks">
         <a href="#universe">Universe</a>
         <a href="#spaces">Spaces</a>
+        <a href="#mission-control">Mission Control</a>
         <a href="#studio">SpaceStudio</a>
         <a href="#vision">Vision</a>
         <a class="btn" href="#contact">Get Started</a>
@@ -149,6 +150,54 @@
           <button type="button" data-space="SpaceAI">🤖 <span>AI</span></button>
           <button type="button" data-space="SpaceFarm">🌾 <span>Farm</span></button>
           <button type="button" data-space="SpaceHealth">❤️ <span>Health</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Control Dashboard v9 -->
+    <section class="mission-control-section" id="mission-control" aria-label="TonaqueSpace mission control dashboard">
+      <div class="wrap mission-control-shell">
+        <div class="mission-copy">
+          <div class="eyebrow">Mission Control v9</div>
+          <h2 class="section-title">The ecosystem is now
+            <span class="gold-text">alive.</span>
+          </h2>
+          <p class="muted">Track the platform status, preview active Spaces and launch enquiry flows from one command centre.</p>
+          <div class="mission-actions">
+            <a class="btn" href="#spaces">Explore Spaces</a>
+            <a class="btn ghost" href="#contact">Launch a Space</a>
+          </div>
+        </div>
+
+        <div class="mission-console" aria-label="Live ecosystem console">
+          <div class="console-topbar">
+            <span>● TonaqueSpace OS</span>
+            <b id="missionClock">LIVE</b>
+          </div>
+
+          <div class="mission-stat-grid">
+            <div class="mission-stat"><span>Spaces Online</span><b class="mission-counter" data-target="9">0</b><small>Core ecosystem modules</small></div>
+            <div class="mission-stat"><span>Priority Builds</span><b class="mission-counter" data-target="4">0</b><small>Campus, Cart, Studio, AI</small></div>
+            <div class="mission-stat"><span>System Health</span><b class="mission-counter" data-target="99">0</b><small>% mission readiness</small></div>
+            <div class="mission-stat"><span>Contact Routes</span><b class="mission-counter" data-target="3">0</b><small>WhatsApp + email + admin</small></div>
+          </div>
+
+          <div class="mission-status-grid">
+            <div class="status-pill online"><i></i><span>Network connected</span></div>
+            <div class="status-pill online"><i></i><span>Security active</span></div>
+            <div class="status-pill online"><i></i><span>Enquiries routed</span></div>
+            <div class="status-pill online"><i></i><span>Spaces responsive</span></div>
+          </div>
+
+          <div class="active-space-display">
+            <span>Selected Space</span>
+            <strong id="missionActiveSpace">Awaiting selection</strong>
+            <p id="missionActiveText">Tap any orbit icon to dock with a Space module.</p>
+          </div>
+
+          <div class="mission-log" id="missionLog" aria-live="polite">
+            <span>Initializing command stream...</span>
+          </div>
         </div>
       </div>
     </section>
