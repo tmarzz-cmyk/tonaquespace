@@ -1,19 +1,11 @@
-# TonaqueSpace
+# TonaqueSpace Orbit Live v8
 
-TonaqueSpace is an intelligent software ecosystem by Tonaque Enterprises, developed by Tonaque Digital Solutions.
+Interactive TonaqueSpace website release with live orbit panels and real enquiry routing.
 
-## Version
-Orbit Live v7
+## Contact Routing
+- Email: info@tonaquespace.co.zw
+- Admin: admin@tonaquespace.co.zw
+- WhatsApp: +263 776 706 614
 
 ## Deployment
-GitHub -> Netlify automatic deploy.
-
-## Main Files
-- index.html
-- assets/css/style.css
-- assets/js/app.js
-- assets/images/
-- robots.txt
-- sitemap.xml
-- humans.txt
-- .well-known/security.txt
+Commit updated files to GitHub. Netlify auto-deploys from the main branch.

@@ -1,13 +1,12 @@
-# TonaqueSpace Orbit Live v7
+# TonaqueSpace Orbit Live v8
 
 ## Added
-- Command Dock with quick Space launch buttons.
-- Search field for filtering Space cards and previews.
-- Live Space Preview Deck section.
-- Richer modal details: audience, deliverable and next action.
-- Better active orbit node feedback.
+- WhatsApp demo routing to +263 776 706 614.
+- Primary email: info@tonaquespace.co.zw.
+- Admin email copied into enquiry email flow.
+- Modal-level WhatsApp demo button.
+- Contact strip in footer with direct email and WhatsApp links.
+- Expanded Space selector to include all visible Spaces.
 
-## Kept
-- Complete project release structure.
-- robots.txt, sitemap.xml, humans.txt and security.txt.
-- Existing favicon and PWA assets.
+## Upload to GitHub
+Replace `index.html`, `assets/css/style.css`, and `assets/js/app.js`. Optional: replace docs too.
