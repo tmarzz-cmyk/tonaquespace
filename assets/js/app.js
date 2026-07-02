@@ -122,55 +122,55 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'SpaceCart',
       kicker: 'Retail Space',
       text: 'Retail, POS, ecommerce, orders, inventory and customer loyalty working from one connected system.',
-      features: ['POS & Checkout', 'Stock Control', 'Orders Dashboard', 'Customer Loyalty'], status: 'Prototype ready', phase: 'Commerce foundation', route: '#spacecart', roadmap: ['Product catalogue', 'Cart and checkout', 'Orders admin', 'WhatsApp handoff']
+      features: ['POS & Checkout', 'Stock Control', 'Orders Dashboard', 'Customer Loyalty'], status: 'Prototype ready', phase: 'Commerce foundation', route: '#spacecart', audience: 'Retailers and online sellers', deliverable: 'Clickable commerce prototype', nextAction: 'Build product catalogue', roadmap: ['Product catalogue', 'Cart and checkout', 'Orders admin', 'WhatsApp handoff']
     },
     SpaceCampus: {
       title: 'SpaceCampus',
       kicker: 'Education Space',
       text: 'Admissions, students, parents, staff, timetables, attendance, exams, fees and reports for schools and colleges.',
-      features: ['Admissions', 'Student Records', 'Attendance', 'Reports'], status: 'Priority build', phase: 'Education foundation', route: '#spacecampus', roadmap: ['Admissions flow', 'Student records', 'Parent portal', 'Reports dashboard']
+      features: ['Admissions', 'Student Records', 'Attendance', 'Reports'], status: 'Priority build', phase: 'Education foundation', route: '#spacecampus', audience: 'Schools, colleges and training centres', deliverable: 'Admissions and student shell', nextAction: 'Build learner records', roadmap: ['Admissions flow', 'Student records', 'Parent portal', 'Reports dashboard']
     },
     SpaceFinance: {
       title: 'SpaceFinance',
       kicker: 'Finance Space',
       text: 'Accounting, invoicing, expenses, payroll, budgets and financial intelligence for growing organisations.',
-      features: ['Invoices', 'Budgets', 'Payroll', 'Dashboards'], status: 'Planned', phase: 'Finance layer', route: '#spacefinance', roadmap: ['Invoices', 'Expense tracking', 'Payroll shell', 'Financial insights']
+      features: ['Invoices', 'Budgets', 'Payroll', 'Dashboards'], status: 'Planned', phase: 'Finance layer', route: '#spacefinance', audience: 'SMEs and institutions', deliverable: 'Finance dashboard shell', nextAction: 'Build invoice flow', roadmap: ['Invoices', 'Expense tracking', 'Payroll shell', 'Financial insights']
     },
     SpaceAI: {
       title: 'SpaceAI',
       kicker: 'Intelligence Space',
       text: 'Automation, insights, recommendations and intelligent assistance across the whole TonaqueSpace ecosystem.',
-      features: ['AI Assistant', 'Automation', 'Insights', 'Recommendations'], status: 'Concept active', phase: 'Intelligence layer', route: '#spaceai', roadmap: ['AI assistant', 'Automation rules', 'Insights engine', 'Recommendations']
+      features: ['AI Assistant', 'Automation', 'Insights', 'Recommendations'], status: 'Concept active', phase: 'Intelligence layer', route: '#spaceai', audience: 'Teams needing automation', deliverable: 'Assistant command layer', nextAction: 'Build AI prompts', roadmap: ['AI assistant', 'Automation rules', 'Insights engine', 'Recommendations']
     },
     SpaceHealth: {
       title: 'SpaceHealth',
       kicker: 'Healthcare Space',
       text: 'Patient records, appointments, medical billing, pharmacy workflows and healthcare analytics.',
-      features: ['Patient Records', 'Appointments', 'Billing', 'Pharmacy'], status: 'Planned', phase: 'Healthcare layer', route: '#spacehealth', roadmap: ['Appointments', 'Patient profiles', 'Billing shell', 'Pharmacy workflows']
+      features: ['Patient Records', 'Appointments', 'Billing', 'Pharmacy'], status: 'Planned', phase: 'Healthcare layer', route: '#spacehealth', audience: 'Clinics and healthcare teams', deliverable: 'Appointment workflow shell', nextAction: 'Build patient records', roadmap: ['Appointments', 'Patient profiles', 'Billing shell', 'Pharmacy workflows']
     },
     SpaceFarm: {
       title: 'SpaceFarm',
       kicker: 'Agriculture Space',
       text: 'Crop management, livestock, field operations, inventory, market insights and farm planning tools.',
-      features: ['Crop Planning', 'Livestock', 'Field Tasks', 'Market Insights'], status: 'Prototype planned', phase: 'Agriculture layer', route: '#spacefarm', roadmap: ['Crop calendar', 'Input tracker', 'Field tasks', 'Market prices']
+      features: ['Crop Planning', 'Livestock', 'Field Tasks', 'Market Insights'], status: 'Prototype planned', phase: 'Agriculture layer', route: '#spacefarm', audience: 'Farmers and agri teams', deliverable: 'Crop calendar shell', nextAction: 'Build farm planner', roadmap: ['Crop calendar', 'Input tracker', 'Field tasks', 'Market prices']
     },
     SpaceHR: {
       title: 'SpaceHR',
       kicker: 'People Space',
       text: 'Employee management, payroll, leave, performance tracking and organisation growth tools.',
-      features: ['Employees', 'Leave', 'Payroll', 'Performance'], status: 'Planned', phase: 'People layer', route: '#spacehr', roadmap: ['Employee profiles', 'Leave requests', 'Payroll link', 'Performance notes']
+      features: ['Employees', 'Leave', 'Payroll', 'Performance'], status: 'Planned', phase: 'People layer', route: '#spacehr', audience: 'Growing teams', deliverable: 'People operations shell', nextAction: 'Build employee profiles', roadmap: ['Employee profiles', 'Leave requests', 'Payroll link', 'Performance notes']
     },
     SpaceLogistics: {
       title: 'SpaceLogistics',
       kicker: 'Logistics Space',
       text: 'Fleet management, tracking, deliveries, routes and supply chain optimisation.',
-      features: ['Fleet', 'Tracking', 'Routes', 'Deliveries'], status: 'Planned', phase: 'Logistics layer', route: '#spacelogistics', roadmap: ['Fleet records', 'Delivery tasks', 'Route planning', 'Tracking summary']
+      features: ['Fleet', 'Tracking', 'Routes', 'Deliveries'], status: 'Planned', phase: 'Logistics layer', route: '#spacelogistics', audience: 'Fleet and delivery teams', deliverable: 'Logistics dashboard shell', nextAction: 'Build route planner', roadmap: ['Fleet records', 'Delivery tasks', 'Route planning', 'Tracking summary']
     },
     SpaceInventory: {
       title: 'SpaceInventory',
       kicker: 'Inventory Space',
       text: 'Stock control, warehouses, suppliers, reorder alerts and real-time inventory visibility.',
-      features: ['Warehouses', 'Suppliers', 'Reorder Alerts', 'Live Stock'], status: 'Planned', phase: 'Inventory layer', route: '#spaceinventory', roadmap: ['Stock list', 'Supplier profiles', 'Reorder alerts', 'Warehouse view']
+      features: ['Warehouses', 'Suppliers', 'Reorder Alerts', 'Live Stock'], status: 'Planned', phase: 'Inventory layer', route: '#spaceinventory', audience: 'Warehouses and stock teams', deliverable: 'Inventory visibility shell', nextAction: 'Build stock register', roadmap: ['Stock list', 'Supplier profiles', 'Reorder alerts', 'Warehouse view']
     }
   };
 
@@ -183,6 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalPhase = document.getElementById('spaceModalPhase');
   const modalRoute = document.getElementById('spaceModalRoute');
   const modalRoadmap = document.getElementById('spaceModalRoadmap');
+  const modalStage = document.getElementById('spaceModalStage');
 
   const openModal = (spaceName) => {
     activeSpaceName = spaceName || 'TonaqueSpace';
@@ -195,7 +196,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalStatus) modalStatus.textContent = data.status || 'Ready';
     if (modalPhase) modalPhase.textContent = data.phase || 'Foundation';
     if (modalRoute) modalRoute.textContent = data.route || '#';
+    if (modalStage) modalStage.innerHTML = `<div><span>Audience</span><strong>${data.audience || 'Modern organisations'}</strong></div><div><span>V7 Deliverable</span><strong>${data.deliverable || 'Interactive preview'}</strong></div><div><span>Next Action</span><strong>${data.nextAction || 'Request demo'}</strong></div>`;
     if (modalRoadmap) modalRoadmap.innerHTML = (data.roadmap || []).map((step, index) => `<div><b>0${index + 1}</b><span>${step}</span></div>`).join('');
+    const leadSpace = document.getElementById('leadSpace');
+    if (leadSpace) leadSpace.value = data.title;
     if (data.route) window.history.replaceState(null, '', data.route);
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
@@ -372,4 +376,21 @@ document.addEventListener('DOMContentLoaded', () => {
     installBtn.classList.remove('visible');
   });
 
+});
+
+
+// V7 search helper: filters cards and previews by typed terms.
+document.addEventListener('DOMContentLoaded', () => {
+  const search = document.getElementById('spaceSearch');
+  const clear = document.getElementById('clearSpaceSearch');
+  const targets = [...document.querySelectorAll('.card, .space-preview-card')];
+  const applySearch = () => {
+    const term = (search?.value || '').trim().toLowerCase();
+    targets.forEach(el => {
+      const text = el.textContent.toLowerCase();
+      el.classList.toggle('hidden-by-search', !!term && !text.includes(term));
+    });
+  };
+  if (search) search.addEventListener('input', applySearch);
+  if (clear) clear.addEventListener('click', () => { search.value = ''; applySearch(); search.focus(); });
 });
