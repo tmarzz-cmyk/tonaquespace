@@ -1,0 +1,3 @@
+Contact: mailto:info@tonaquespace.co.zw
+Expires: 2027-07-02T23:59:59Z
+Canonical: https://tonaquespace.co.zw/.well-known/security.txt
