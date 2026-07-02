@@ -536,3 +536,70 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('clearCart')?.addEventListener('click', () => { cart.length = 0; renderCart(); });
   renderCart();
 });
+
+
+// ========================================================================== 
+// SPRINT 2 v13-v15: AI PREVIEW, LIVE HUBS, NOTIFICATIONS
+// ========================================================================== 
+document.addEventListener('DOMContentLoaded', () => {
+  const aiThread = document.getElementById('aiThread');
+  const promptButtons = document.querySelectorAll('[data-ai-prompt]');
+  const aiReplies = {
+    'Build a launch plan for SpaceCampus.': 'SpaceCampus launch path: admissions shell, learner records, staff dashboard, parent communication, then exam/report workflows.',
+    'Summarise today’s business opportunities.': 'Business brief: prioritise education, retail, digital services, agriculture and health because they connect naturally inside TonaqueSpace.',
+    'Create a farm operations checklist.': 'Farm checklist: seedlings, irrigation, input stock, pest watch, harvest dates, market pricing and weekly production notes.',
+    'Prepare a health appointment workflow.': 'Health flow: patient enquiry, appointment request, service category, reminder, visit notes and follow-up message.'
+  };
+  promptButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (!aiThread) return;
+      const prompt = btn.dataset.aiPrompt;
+      aiThread.insertAdjacentHTML('beforeend', `<div class="ai-message user">${prompt}</div>`);
+      setTimeout(() => {
+        aiThread.insertAdjacentHTML('beforeend', `<div class="ai-message bot">${aiReplies[prompt] || 'SpaceAI preview response ready.'}</div>`);
+        aiThread.scrollTop = aiThread.scrollHeight;
+      }, 180);
+    });
+  });
+
+  const hubData = {
+    farm: {
+      kicker: 'SpaceFarm Preview',
+      title: 'Farm operations hub',
+      text: 'Plan crops, monitor tasks, track inputs and prepare produce for market from one operational view.',
+      workflows: ['Crop calendar', 'Input tracker', 'Irrigation notes', 'Harvest planning', 'Market readiness', 'Livestock notes']
+    },
+    health: {
+      kicker: 'SpaceHealth Preview',
+      title: 'Health service hub',
+      text: 'Coordinate appointments, service enquiries and patient journeys for clinics, wellness providers and health teams.',
+      workflows: ['Appointment requests', 'Service categories', 'Patient journey', 'Reminder flow', 'Billing preview', 'Follow-up notes']
+    },
+    community: {
+      kicker: 'Community Preview',
+      title: 'Updates and opportunity hub',
+      text: 'Share platform updates, new Space launches, partner opportunities and public announcements.',
+      workflows: ['Announcements', 'Partner updates', 'Launch notes', 'Community posts', 'Opportunity board', 'Event reminders']
+    }
+  };
+  const drawer = document.getElementById('hubDrawer');
+  const close = document.getElementById('hubClose');
+  const title = document.getElementById('hubTitle');
+  const text = document.getElementById('hubText');
+  const kicker = document.getElementById('hubKicker');
+  const workflows = document.getElementById('hubWorkflows');
+  document.querySelectorAll('[data-open-hub]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const data = hubData[btn.dataset.openHub];
+      if (!drawer || !data) return;
+      kicker.textContent = data.kicker;
+      title.textContent = data.title;
+      text.textContent = data.text;
+      workflows.innerHTML = data.workflows.map(item => `<div>✓ ${item}</div>`).join('');
+      drawer.classList.add('active');
+      drawer.setAttribute('aria-hidden','false');
+    });
+  });
+  if (close && drawer) close.addEventListener('click', () => { drawer.classList.remove('active'); drawer.setAttribute('aria-hidden','true'); });
+  if (drawer) drawer.addEventListener('click', e => { if (e.target === drawer) { drawer.classList.remove('active'); drawer.setAttribute('aria-hidden','true'); } });
+});
