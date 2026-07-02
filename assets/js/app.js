@@ -192,11 +192,15 @@ document.addEventListener('DOMContentLoaded', () => {
     modalTitle.textContent = data.title;
     modalKicker.textContent = data.kicker;
     modalText.textContent = data.text;
+    const missionActiveSpace = document.getElementById('missionActiveSpace');
+    const missionActiveText = document.getElementById('missionActiveText');
+    if (missionActiveSpace) missionActiveSpace.textContent = data.title + ' docked';
+    if (missionActiveText) missionActiveText.textContent = data.text;
     modalFeatures.innerHTML = data.features.map(feature => `<span>${feature}</span>`).join('');
     if (modalStatus) modalStatus.textContent = data.status || 'Ready';
     if (modalPhase) modalPhase.textContent = data.phase || 'Foundation';
     if (modalRoute) modalRoute.textContent = data.route || '#';
-    if (modalStage) modalStage.innerHTML = `<div><span>Audience</span><strong>${data.audience || 'Modern organisations'}</strong></div><div><span>V7 Deliverable</span><strong>${data.deliverable || 'Interactive preview'}</strong></div><div><span>Next Action</span><strong>${data.nextAction || 'Request demo'}</strong></div>`;
+    if (modalStage) modalStage.innerHTML = `<div><span>Audience</span><strong>${data.audience || 'Modern organisations'}</strong></div><div><span>V9 Deliverable</span><strong>${data.deliverable || 'Interactive preview'}</strong></div><div><span>Next Action</span><strong>${data.nextAction || 'Request demo'}</strong></div>`;
     if (modalRoadmap) modalRoadmap.innerHTML = (data.roadmap || []).map((step, index) => `<div><b>0${index + 1}</b><span>${step}</span></div>`).join('');
     const leadSpace = document.getElementById('leadSpace');
     if (leadSpace) leadSpace.value = data.title;
@@ -389,6 +393,65 @@ document.addEventListener('DOMContentLoaded', () => {
     deferredInstallPrompt = null;
     installBtn.classList.remove('visible');
   });
+
+  // ==========================================
+  // 10. V9 MISSION CONTROL COUNTERS + LOG
+  // ==========================================
+  const missionCounters = document.querySelectorAll('.mission-counter');
+  const missionConsole = document.querySelector('.mission-console');
+  const missionLog = document.getElementById('missionLog');
+  const missionClock = document.getElementById('missionClock');
+  let missionAnimated = false;
+
+  const animateMissionCounters = () => {
+    if (missionAnimated) return;
+    missionAnimated = true;
+    missionCounters.forEach(counter => {
+      const target = parseInt(counter.dataset.target || '0', 10);
+      let value = 0;
+      const steps = 34;
+      const inc = Math.max(1, Math.ceil(target / steps));
+      const tick = () => {
+        value += inc;
+        if (value >= target) {
+          counter.textContent = target === 99 ? '99%' : target;
+          return;
+        }
+        counter.textContent = target === 99 ? value + '%' : value;
+        requestAnimationFrame(tick);
+      };
+      tick();
+    });
+  };
+
+  if (missionConsole && missionCounters.length) {
+    const missionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if (entry.isIntersecting) animateMissionCounters(); });
+    }, { threshold: 0.35 });
+    missionObserver.observe(missionConsole);
+  }
+
+  const missionLines = [
+    'Orbit nodes responsive. Awaiting Space selection...',
+    'Contact routes armed: WhatsApp, info email and admin email.',
+    'SpaceStudio command layer online.',
+    'TonaqueSpace ecosystem ready for staged product rollout.'
+  ];
+  let missionLineIndex = 0;
+  const updateMissionLine = () => {
+    if (missionLog) missionLog.innerHTML = `<span>${missionLines[missionLineIndex % missionLines.length]}</span>`;
+    missionLineIndex += 1;
+  };
+  updateMissionLine();
+  setInterval(updateMissionLine, 4200);
+
+  const updateClock = () => {
+    if (!missionClock) return;
+    const now = new Date();
+    missionClock.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  };
+  updateClock();
+  setInterval(updateClock, 30000);
 
 });
 
