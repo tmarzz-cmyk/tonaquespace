@@ -471,3 +471,68 @@ document.addEventListener('DOMContentLoaded', () => {
   if (search) search.addEventListener('input', applySearch);
   if (clear) clear.addEventListener('click', () => { search.value = ''; applySearch(); search.focus(); });
 });
+
+
+// Sprint 1 V10-V12: Tonaque ID, Directory, Marketplace
+window.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelectorAll('.id-tab');
+  const panels = document.querySelectorAll('.id-panel');
+  const idStatus = document.getElementById('idStatus');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const key = tab.dataset.idTab;
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.idPanel === key));
+      if (idStatus) idStatus.textContent = key === 'signin' ? 'Ready for Mission Control sign in.' : key === 'create' ? 'Early access request mode active.' : 'Guest exploration mode active.';
+    });
+  });
+  document.querySelectorAll('.id-demo-btn').forEach(btn => btn.addEventListener('click', () => {
+    if (idStatus) idStatus.textContent = btn.dataset.dashboardMessage || 'Mission Control unlocked.';
+    document.getElementById('mission-control')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }));
+
+  const businessSearch = document.getElementById('businessSearch');
+  const businessFilters = document.querySelectorAll('.business-filter');
+  const businessCards = document.querySelectorAll('.business-card');
+  let activeBusinessFilter = 'all';
+  const applyBusinessFilter = () => {
+    const term = (businessSearch?.value || '').trim().toLowerCase();
+    businessCards.forEach(card => {
+      const category = card.dataset.businessCategory || '';
+      const matchCategory = activeBusinessFilter === 'all' || category.includes(activeBusinessFilter);
+      const matchSearch = !term || card.textContent.toLowerCase().includes(term);
+      card.classList.toggle('hidden', !(matchCategory && matchSearch));
+    });
+  };
+  businessFilters.forEach(btn => btn.addEventListener('click', () => {
+    activeBusinessFilter = btn.dataset.businessFilter || 'all';
+    businessFilters.forEach(b => b.classList.toggle('active', b === btn));
+    applyBusinessFilter();
+  }));
+  businessSearch?.addEventListener('input', applyBusinessFilter);
+
+  const cart = [];
+  const cartCount = document.getElementById('cartCount');
+  const cartItems = document.getElementById('cartItems');
+  const cartTotal = document.getElementById('cartTotal');
+  const cartWhatsApp = document.getElementById('cartWhatsApp');
+  const renderCart = () => {
+    const total = cart.reduce((sum, item) => sum + item.price, 0);
+    if (cartCount) cartCount.textContent = `${cart.length} item${cart.length === 1 ? '' : 's'}`;
+    if (cartItems) cartItems.innerHTML = cart.length ? cart.map(item => `<div>• ${item.name} — $${item.price}+</div>`).join('') : 'No items added yet.';
+    if (cartTotal) cartTotal.textContent = `$${total}+`;
+    if (cartWhatsApp) {
+      const text = cart.length ? `Hello TonaqueSpace, I am interested in: ${cart.map(i => i.name).join(', ')}. Estimated total $${total}+` : 'Hello TonaqueSpace, I want to discuss SpaceCart.';
+      cartWhatsApp.href = `https://wa.me/263776706614?text=${encodeURIComponent(text)}`;
+    }
+  };
+  document.querySelectorAll('.add-market-item').forEach(btn => btn.addEventListener('click', () => {
+    const card = btn.closest('.product-mini');
+    cart.push({ name: card?.dataset.product || 'Space Product', price: Number(card?.dataset.price || 0) });
+    renderCart();
+    btn.textContent = 'Added ✓';
+    setTimeout(() => { btn.textContent = 'Add'; }, 900);
+  }));
+  document.getElementById('clearCart')?.addEventListener('click', () => { cart.length = 0; renderCart(); });
+  renderCart();
+});
