@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TonaqueSpace — Where Everything Connects.</title>
+  <title>TonaqueSpace — Interactive Software Ecosystem</title>
   <meta name="description" content="TonaqueSpace is an intelligent software ecosystem for education, commerce, finance, healthcare, agriculture and enterprise operations.">
   <meta name="keywords" content="TonaqueSpace, SpaceCampus, SpaceCart, SpaceFinance, SpaceStudio, Zimbabwe software ecosystem, Tonaque Digital Solutions, business software Zimbabwe">
   <meta name="author" content="Tonaque Enterprises Pvt Ltd">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://tonaquespace.co.zw/">
   <meta property="og:title" content="TonaqueSpace — Where Everything Connects.">
-  <meta property="og:description" content="One intelligent software ecosystem for modern organisations.">
+  <meta property="og:description" content="Explore the interactive TonaqueSpace ecosystem: SpaceCampus, SpaceCart, SpaceFinance, SpaceAI, SpaceFarm and SpaceHealth.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tonaquespace.co.zw/">
   <meta property="og:image" content="https://tonaquespace.co.zw/apple-touch-icon.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="TonaqueSpace — Where Everything Connects.">
-  <meta name="twitter:description" content="One intelligent software ecosystem for modern organisations.">
+  <meta name="twitter:description" content="Explore the interactive TonaqueSpace ecosystem: SpaceCampus, SpaceCart, SpaceFinance, SpaceAI, SpaceFarm and SpaceHealth.">
   <meta name="twitter:image" content="https://tonaquespace.co.zw/apple-touch-icon.png">
   
   <!-- Favicons & App Icons -->
@@ -124,6 +124,31 @@
             <div class="node n5" title="SpaceFarm" data-space="SpaceFarm" role="button" tabindex="0" aria-label="Open SpaceFarm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 19c8-1 13-6 14-14-8 1-13 6-14 14Z"/><path d="M5 19 19 5"/></svg></div>
             <div class="node n6" title="SpaceHealth" data-space="SpaceHealth" role="button" tabindex="0" aria-label="Open SpaceHealth"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4c-2 0-4 2-4 4v8c0 2 2 4 4 4"/><path d="M15 4c2 0 4 2 4 4v8c0 2-2 4-4 4"/><path d="M9 8v8M15 8v8M9 12h6"/></svg></div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Command Dock -->
+    <section class="command-dock-section" aria-label="TonaqueSpace command dock">
+      <div class="wrap command-dock">
+        <div>
+          <div class="eyebrow">Command Dock</div>
+          <h2 class="section-title">Choose a Space.
+            <span class="gold-text">Start exploring.</span>
+          </h2>
+          <p class="muted">Tap a module below to preview what it does, who it serves, and what comes next in the roadmap.</p>
+        </div>
+        <div class="dock-search">
+          <input id="spaceSearch" type="search" placeholder="Search Spaces e.g. school, shop, finance..." aria-label="Search TonaqueSpace modules">
+          <button class="btn ghost" type="button" id="clearSpaceSearch">Clear</button>
+        </div>
+        <div class="quick-space-grid" id="quickSpaceGrid">
+          <button type="button" data-space="SpaceCampus">🎓 <span>Campus</span></button>
+          <button type="button" data-space="SpaceCart">🛒 <span>Cart</span></button>
+          <button type="button" data-space="SpaceFinance">💰 <span>Finance</span></button>
+          <button type="button" data-space="SpaceAI">🤖 <span>AI</span></button>
+          <button type="button" data-space="SpaceFarm">🌾 <span>Farm</span></button>
+          <button type="button" data-space="SpaceHealth">❤️ <span>Health</span></button>
         </div>
       </div>
     </section>
@@ -257,6 +282,40 @@
       </div>
     </section>
 
+    <!-- Live Space Preview Deck -->
+    <section class="live-spaces-section" id="live-spaces">
+      <div class="wrap">
+        <div class="spaces-head">
+          <div>
+            <div class="eyebrow">Live Space Preview</div>
+            <h2 class="section-title">Every Space now responds.</h2>
+            <p class="muted">These previews turn the ecosystem from a static landing page into an interactive product map.</p>
+          </div>
+          <a class="btn ghost" href="#contact">Request a Demo →</a>
+        </div>
+        <div class="space-preview-grid">
+          <article class="space-preview-card" data-space="SpaceCampus" style="--accent: var(--space-campus)">
+            <b>🎓 SpaceCampus</b><span>Admissions • Attendance • Reports</span><button type="button" data-space="SpaceCampus">Open Campus Preview</button>
+          </article>
+          <article class="space-preview-card" data-space="SpaceCart" style="--accent: var(--space-cart)">
+            <b>🛒 SpaceCart</b><span>Products • Orders • Checkout</span><button type="button" data-space="SpaceCart">Open Commerce Preview</button>
+          </article>
+          <article class="space-preview-card" data-space="SpaceFinance" style="--accent: var(--space-finance)">
+            <b>💰 SpaceFinance</b><span>Invoices • Budgets • Payroll</span><button type="button" data-space="SpaceFinance">Open Finance Preview</button>
+          </article>
+          <article class="space-preview-card" data-space="SpaceAI" style="--accent: var(--space-ai)">
+            <b>🤖 SpaceAI</b><span>Automation • Insights • Assistant</span><button type="button" data-space="SpaceAI">Open AI Preview</button>
+          </article>
+          <article class="space-preview-card" data-space="SpaceFarm" style="--accent: var(--space-farm)">
+            <b>🌾 SpaceFarm</b><span>Crops • Inputs • Field Tasks</span><button type="button" data-space="SpaceFarm">Open Farm Preview</button>
+          </article>
+          <article class="space-preview-card" data-space="SpaceHealth" style="--accent: var(--space-health)">
+            <b>❤️ SpaceHealth</b><span>Appointments • Patients • Billing</span><button type="button" data-space="SpaceHealth">Open Health Preview</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Pillars / Highlights Section -->
     <section class="features-section">
       <div class="wrap features">
@@ -362,6 +421,7 @@
         <div><span>Phase</span><strong id="spaceModalPhase">Foundation</strong></div>
         <div><span>Route</span><strong id="spaceModalRoute">/</strong></div>
       </div>
+      <div class="space-modal-stage" id="spaceModalStage"></div>
       <div class="space-modal-roadmap" id="spaceModalRoadmap"></div>
       <div class="space-modal-actions">
         <a href="#contact" class="btn" id="modalStartBtn" data-close-modal>Start With This Space</a>

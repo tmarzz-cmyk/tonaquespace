@@ -1,22 +1,19 @@
 # TonaqueSpace
 
-TonaqueSpace is an intelligent software ecosystem for education, commerce, finance, healthcare, agriculture and enterprise operations.
+TonaqueSpace is an intelligent software ecosystem by Tonaque Enterprises, developed by Tonaque Digital Solutions.
 
-## Structure
-
-```text
-index.html
-robots.txt
-sitemap.xml
-humans.txt
-.well-known/security.txt
-site.webmanifest
-assets/css/style.css
-assets/js/app.js
-assets/images/tds-logo.png
-assets/images/tonaque-space-symbol.png
-```
+## Version
+Orbit Live v7
 
 ## Deployment
+GitHub -> Netlify automatic deploy.
 
-This project is designed for GitHub + Netlify continuous deployment. Commit changes to the `main` branch and Netlify publishes automatically.
+## Main Files
+- index.html
+- assets/css/style.css
+- assets/js/app.js
+- assets/images/
+- robots.txt
+- sitemap.xml
+- humans.txt
+- .well-known/security.txt

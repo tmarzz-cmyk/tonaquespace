@@ -1,7 +1,11 @@
-# TonaqueSpace TODO
+# Next Build Ideas
 
-- Add full SpaceStudio page.
-- Create dedicated pages for SpaceCampus, SpaceCart, SpaceFinance, SpaceAI, SpaceFarm and SpaceHealth.
-- Add JSON-LD structured data.
-- Add analytics.
-- Add contact email routing.
+## v8
+- Build a real SpaceCart mini prototype inside the site.
+- Add demo request tracking details.
+- Add individual anchor sections for each Space.
+
+## Later
+- SpaceCampus admissions preview.
+- SpaceFarm crop calendar preview.
+- SpaceAI assistant preview.
