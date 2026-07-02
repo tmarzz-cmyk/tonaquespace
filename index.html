@@ -5,11 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TonaqueSpace — Where Everything Connects.</title>
   <meta name="description" content="TonaqueSpace is an intelligent software ecosystem for education, commerce, finance, healthcare, agriculture and enterprise operations.">
-  <meta name="keywords" content="TonaqueSpace, SpaceCampus, SpaceCart, SpaceFinance, SpaceStudio, Zimbabwe software ecosystem">
+  <meta name="keywords" content="TonaqueSpace, SpaceCampus, SpaceCart, SpaceFinance, SpaceStudio, Zimbabwe software ecosystem, Tonaque Digital Solutions, business software Zimbabwe">
+  <meta name="author" content="Tonaque Enterprises Pvt Ltd">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tonaquespace.co.zw/">
   <meta property="og:title" content="TonaqueSpace — Where Everything Connects.">
   <meta property="og:description" content="One intelligent software ecosystem for modern organisations.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="apple-touch-icon.png">
+  <meta property="og:url" content="https://tonaquespace.co.zw/">
+  <meta property="og:image" content="https://tonaquespace.co.zw/apple-touch-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TonaqueSpace — Where Everything Connects.">
+  <meta name="twitter:description" content="One intelligent software ecosystem for modern organisations.">
+  <meta name="twitter:image" content="https://tonaquespace.co.zw/apple-touch-icon.png">
   
   <!-- Favicons & App Icons -->
   <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
@@ -27,6 +35,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
   
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TonaqueSpace",
+    "url": "https://tonaquespace.co.zw/",
+    "logo": "https://tonaquespace.co.zw/apple-touch-icon.png",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Tonaque Enterprises Pvt Ltd"
+    },
+    "foundingLocation": "Zimbabwe"
+  }
+  </script>
+
   <!-- Primary Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -333,6 +357,12 @@
       <h2 id="spaceModalTitle">Space Module</h2>
       <p id="spaceModalText"></p>
       <div class="space-modal-features" id="spaceModalFeatures"></div>
+      <div class="space-modal-intel" aria-label="Space readiness information">
+        <div><span>Status</span><strong id="spaceModalStatus">Ready</strong></div>
+        <div><span>Phase</span><strong id="spaceModalPhase">Foundation</strong></div>
+        <div><span>Route</span><strong id="spaceModalRoute">/</strong></div>
+      </div>
+      <div class="space-modal-roadmap" id="spaceModalRoadmap"></div>
       <div class="space-modal-actions">
         <a href="#contact" class="btn" id="modalStartBtn" data-close-modal>Start With This Space</a>
         <button class="btn ghost" type="button" id="copySpaceLink">Copy Space Link</button>

@@ -1,30 +1,16 @@
 /* TEAM */
-
 Project: TonaqueSpace
 Website: https://tonaquespace.co.zw
-
-Founder
-Name: Tony Mazaiwana
+Founder: Tony Mazaiwana
 Company: Tonaque Enterprises Pvt Ltd
+Development: Tonaque Digital Solutions
+AI Development Assistant: ChatGPT (OpenAI)
 Country: Zimbabwe
 
-Development
-Design & Development: Tonaque Digital Solutions
-AI Development Assistant: ChatGPT (OpenAI)
-
-Technology
-HTML5
-CSS3
-JavaScript
-GitHub
-Netlify
-
-Mission
-Connecting people, ideas, businesses and opportunities through one powerful digital space.
-
 /* SITE */
-
 Language: English
 Standards: HTML5, CSS3, JavaScript
 Hosting: Netlify
-Version: 1.0
+Repository: GitHub
+Version: Orbit Live v6
+Mission: Where Everything Connects.
