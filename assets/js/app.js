@@ -198,10 +198,31 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.classList.remove('active');
     modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    setActiveOrbitNode('');
   };
 
-  document.querySelectorAll('[data-space]').forEach(button => {
-    button.addEventListener('click', () => openModal(button.dataset.space));
+  const orbitStage = document.querySelector('.orbitstage');
+  const spaceTriggers = document.querySelectorAll('[data-space]');
+  const setActiveOrbitNode = (spaceName) => {
+    spaceTriggers.forEach(trigger => {
+      trigger.classList.toggle('is-active', trigger.dataset.space === spaceName && trigger.classList.contains('node'));
+    });
+    if (orbitStage) orbitStage.classList.toggle('has-active-space', !!spaceName);
+  };
+
+  spaceTriggers.forEach(button => {
+    button.addEventListener('click', () => {
+      setActiveOrbitNode(button.dataset.space);
+      openModal(button.dataset.space);
+    });
+
+    button.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        setActiveOrbitNode(button.dataset.space);
+        openModal(button.dataset.space);
+      }
+    });
   });
 
   document.querySelectorAll('[data-close-modal]').forEach(button => {
